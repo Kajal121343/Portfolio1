@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('codergitl.avif');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        .nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .nav a:hover {
+            color: #ccc;
+        }
+
+        section {
+            padding: 100px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .intro {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            margin: 20px;
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .card a:hover {
+            color: #23527c;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+       
+        .projects, .skills, .education, .hobbies, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="home" style="height: 100vh;">
+        <div class="intro" id="intro">I am Kajal</div>
+    </section>
+<header class="header">
+    <h1>My Portfolio</h1>
+</header>
+
+
+<section id="intro-paragraph">
+    <div class="intro-text" style="color: white; text-align: center; padding: 20px; font-size: 1.5em;">
+        A passionate web developer with a keen interest in integrating AI and machine learning into innovative web solutions. I strive to create intuitive, cutting-edge websites that leverage the power of AI to enhance user experiences and drive technological progress.
+    </div>
+</section>
+
+
+
+
+
+    <nav class="nav">
+        <ul>
+            <li><a onclick="scrollToSection('home')">Home</a></li>
+            <li><a onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a onclick="scrollToSection('education')">Education</a></li>
+            <li><a onclick="scrollToSection('skills')">Soft Skills</a></li>
+            <li><a onclick="scrollToSection('hobbies')">Hobbies</a></li>
+            <li><a onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+   
+
+    
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <img src="https://images.theconversation.com/files/442675/original/file-20220126-17-1i0g402.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1356&h=668&fit=crop" alt="Project 1">
+            <h2>5-day weather forecast</h2>
+            <p>Developed a 5-day weather forecast website that delivers precise temperature predictions, including maximum and
+                minimum values, accompanied by visually intuitive weather icons, enhancing user accessibility and experience.</p>
+            <a href="https://kajal121343.github.io/weather/">View More</a>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsBzFaIvoVwUQA8QucjB_66NbilH-KgbyIQ&s" alt="Project 2">
+            <h2>Multiple Disease Prediction</h2>
+            <p>Engineered an end-to-end disease prediction platform using advanced data analytics to achieve a 92 per cent accuracy
+                rate, significantly enhancing early intervention strategies and reducing misdiagnosis.
+            </p>
+            <a href="https://ast008-public-ml-webapp-mdps-public-sax4jp.streamlit.app/">View More</a>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhu-l1aNYLaNFIAmjp7XVEXR14N1GLWz2dpg&s" alt="Project 3">
+            <h2>Text-to-Voice and Voice-to-Text Converter</h2>
+            <p>Implemented a robust text-to-voice and voice-to-text application that facilitated communication for individuals with
+                disabilities; positively impacted 300+ users, fostering inclusivity and driving engagement in community initiatives.
+            </p>
+            <a href="https://kajal121343.github.io/textvoice/">View More</a>
+        </div>
+    </div>
+</section>
+
+        </div>
+    </section>
+
+    
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education">
+            <div class="card">
+                <h2>Education Details</h2>
+                <p>Bachelor's in Computer Science from Banasthali University</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h2>Leadership</h2>
+                <p>Excellent at leading teams and managing resources efficiently.</p>
+            </div>
+            <div class="card">
+                <h2>Time Management</h2>
+                <p>Skilled at organizing tasks, setting priorities, and meeting deadlines to ensure optimal productivity</p>
+            </div>
+            <div class="card">
+                <h2>Teamwork</h2>
+                <p>Capable of working in diverse teams and handling collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="hobbies">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="hobbies">
+            <div class="card">
+                <h2>Photography</h2>
+                <p>I enjoy capturing moments through my camera.</p>
+            </div>
+            <div class="card">
+                <h2>Traveling</h2>
+                <p>I love exploring new cultures and places.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:kajalkumari800023@gmail.com">kajalkumari800023@gmail.com</a></p>
+            <p>Phone: 9523153709</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/kajal-kumari-905656256/" target="_blank">linkedin.com/in/kajal-kumari-905656256/</a></p>
+        </div>
+    </section>
+    
+
+    <script>
+        const sections = {
+            home: document.getElementById('home'),
+            projects: document.getElementById('projects'),
+            education: document.getElementById('education'),
+            skills: document.getElementById('skills'),
+            hobbies: document.getElementById('hobbies'),
+            contact: document.getElementById('contact')
+        };
+    
+        
+        function smoothScrollTo(target, duration) {
+            const targetPosition = target.offsetTop - 60;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            let startTime = null;
+    
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+    
+            function easeInOutQuad(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+    
+            requestAnimationFrame(animation);
+        }
+    
+        function scrollToSection(sectionId) {
+            const section = sections[sectionId];
+            smoothScrollTo(section, 1000); 
+        }
+    
+        
+        const introText = document.getElementById('intro');
+        const messages = ['I am Kajal', 'I am a Developer', 'I am an ML Aspirant', 'I am a Bharat Intern'];
+        let messageIndex = 0;
+    
+        function changeMessage() {
+            introText.textContent = messages[messageIndex];
+            messageIndex = (messageIndex + 1) % messages.length;
+        }
+    
+        setInterval(changeMessage, 1000); 
+    </script>
+    
+    
+</body>
+</html>
